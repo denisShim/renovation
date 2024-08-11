@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="./src/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <nav class="nav-header">
+                    <ul class="main-menu">
+                      <li><a class="main-menu__link" href="#">МЕНЮ</a></li>
+                      <li><a class="main-menu__link" href="#">ПОРТФОЛИО</a></li>
+                      <li><a class="main-menu__link" href="#">ЦЕНЫ</a></li>
+                      <li><a class="main-menu__link" href="#">СХЕМА РАБОТЫ</a></li>
+                      <li><a class="main-menu__link" href="#">ОТЗЫВЫ</a></li>
+                      <li><a class="main-menu__link" href="#">КОНТАКТЫ</a></li>
+                      <li><a class="main-menu__link" href="#">ГАРАНТИЯ</a></li>
+                    </ul>
+                </nav>
+                <button class="header-btn">ОБРАТНЫЙ ЗВОНОК</button>
+            </div>
+            <div class="header-content">
+                <div class="header-info">
+                    <h1 class="header-info_title">Ремонт под ключ от 2900 руб/м<sup>2</sup>.</h1>
+                    <p class="header-info_text">При заказе ремонта делаем дизайн-проект в подарок</p>
+                    <div class="header-icons">
+                        <div class="header-icon">
+                            <img src="./src/checked truck.svg" alt="Truck">
+                            <span class="header-icons_text">Бесплатный выезд в день обращения</span>
+                        </div>
+                        <div class="header-icon">
+                            <img src="./src/guarantee.svg" alt="Guarantee">
+                            <span class="header-icons_text">Гарантия на работу до 5 лет</span>
+                        </div>
+                        <div class="header-icon">
+                            <img src="./src/time_management.svg" alt="Time">
+                            <span class="header-icons_text">Жесткое соблюдение сроков</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-form">
+                    <form>
+                        <fieldset>
+                            <legend>Рассчитайте стоимость ремонта</legend>
+                            <!-- <p class="form-subtitle">Площадь квартиры:</p> -->
+                            <div class="form-slidebox">
+                                <label for="square" class="form-subtitle">ПЛОЩАДЬ КВАРТИРЫ:</label>
+                                <p class="form-slider_value"><span id="slider_value"></span>м<sup>2</sup></p>
+                                <input class="form-slider" type="range" id="square" name="square" min="0" max="150" value="0" />
+                              </div>
+                            <div class="form-block">
+                                <p class="form-subtitle">ТИП ЖИЛЬЯ:</p>
+                                <p class="form-option">
+                                    <input type="radio" name="type" id="type_1" value="secondary housing" checked/>
+                                    <label for="type_1">Вторичное жилье</label>
+                                </p>
+                                <p class="form-option">
+                                    <input type="radio" name="type" id="type_2" value="new building" />
+                                    <label for="type_2">Новостройка</label>
+                                </p>
+                                <p class="form-option">
+                                    <input type="radio" name="type" id="type_3" value="office" />
+                                    <label for="type_3">Офис</label>
+                                </p>
+                            </div>
+                            <div class="form-block">
+                                <p class="form-subtitle">КОЛ-ВО КОМНАТ:</p>
+                                <p class="form-option">
+                                    <input type="radio" name="rooms" id="room_1" value="1" checked/>
+                                    <label for="room_1">1</label>
+                                </p>
+                                <p class="form-option">
+                                    <input type="radio" name="rooms" id="room_2" value="2" />
+                                    <label for="room_2">2</label>
+                                </p>
+                                <p class="form-option">
+                                    <input type="radio" name="rooms" id="room_3" value="3" />
+                                    <label for="room_3">3+</label>
+                                </p>
+                                <p class="form-option">
+                                    <input type="radio" name="rooms" id="room_4" value="studio" />
+                                    <label for="room_4">Студия</label>
+                                </p>
+                            </div>
+                            <button class="form-btn" type="submit">ОТПРАВИТЬ</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="heder-picture">
+            <img src="./src/side image.png" alt="Flat">
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="footer_block">
+          <div class="footer_block-text">Copyright @by Denis 2024</div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
